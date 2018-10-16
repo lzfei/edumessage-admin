@@ -1,0 +1,54 @@
+.image-editor{
+    .cropper{
+        box-sizing: border-box;
+        border: 1px solid #c3c3c3;
+        width: 100%;
+        height: 100%;
+        img{
+            max-height: 100%;
+        }
+    }
+    .cropper-container{
+        width: 261px!important;
+        height: 276px!important;
+    }
+    .cropper-crop-box {
+        width: 174px!important;
+        height: 184px!important;
+    }
+    .fileinput{
+        display: none;
+    }
+    .filelabel{
+        display: block;
+        padding: 6px 15px;
+        background: #2d8cf0;
+        display: inline-block;
+        border: 1px solid #2d8cf0;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        transition: all .2s;
+        &:hover{
+            background: #5cadff;
+            border: 1px solid #5cadff;
+            transition: all .2s;
+        }
+    }
+    &-con{
+        height: 276px;
+        width: 261px!important;
+        &-preview-con{
+            width: 174px !important;
+            height: 184px !important;
+            border: 1px solid #c3c3c3;
+            #preview{
+                width: 174px;
+                height: 184px;
+                overflow: hidden;
+            }
+        }
+    }
+}
